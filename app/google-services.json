@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "592112283827",
+    "project_id": "dr-abdullah-jahangir-s-books",
+    "storage_bucket": "dr-abdullah-jahangir-s-books.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592112283827:android:947a0746cca5422f5400c6",
+        "android_client_info": {
+          "package_name": "com.innovata.khandaker_abdullah_jahangir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd2GTsusQNmf0AxwuIp42Rlv53TPkGtGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592112283827:android:8fd8d15797599eee5400c6",
+        "android_client_info": {
+          "package_name": "com.shamimhossen.abdullah_jahangir_books"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd2GTsusQNmf0AxwuIp42Rlv53TPkGtGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

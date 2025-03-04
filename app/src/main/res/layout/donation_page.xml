@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="90dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="3dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/dr_icon_close"
+            app:tint="@android:color/white" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/donation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solaiman_lipi"
+            android:justificationMode="inter_word"
+            android:padding="15dp"
+            android:text="এই অ্যাপসটি সম্পূর্ণ বিজ্ঞাপনমুক্ত তাই অ্যাপসের উন্নয়ন কাজের জন্য আপনাদের আর্থিক সহযোগিতা একান্ত কাম্য। আপনাদের আর্থিক সহযোগিতা অ্যাপসটিকে আর উন্নত করতে এবং বিজ্ঞাপন মুক্ত রাখতে সাহয্য করবে।\n\nযারা আল্লাহ্‌র পথে ধন-সম্পদ ব্যয় করে এবং ব্যয় করার পর অনুগ্রহের কথা প্রকাশ করেনা, কষ্টও দেয়না, তাদের জন্য প্রতিদান রয়েছে তাদের রব-এর নিকট। বস্তুতঃ তাদের কোন ভয় নেই এবং তারা চিন্তিত ও হবে না। - আল বাকারাঃ ২৬২\n\nতোমরা আল্লাহর পথে ব্যয় কর এবং স্বহস্তে নিজেদেরকে ধ্বংসে নিক্ষেপ করো না এবং কল্যাণকর কাজ করে যাও, নিশ্চয়ই আল্লাহ কল্যাণকারীদেরকে ভালবাসেন। - আল বাকারাঃ ১৯৫\n\nআপনার আর্থিক সহযোগিতা পাঠাতে পারেন বিকাশ, নগদ কিংবা রকেট অ্যাকাউন্ট থেকে নিম্নের নাম্বারে - ০১৮৪৯৪০৪৩২৩\n\nএছাড়া খুব সহজ ও দ্রুত বিকাশের অফিশিয়াল লিঙ্ক ব্যাবহার করে সম্পূর্ণ নিরাপদ প্রদ্ধতিতে আপনার আর্থিক সহযোগিতা পাঠাতে নিম্নের বাটনে ক্লিক করুন।"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/bkash_payment_logo" />
+    </LinearLayout>
+
+</RelativeLayout>

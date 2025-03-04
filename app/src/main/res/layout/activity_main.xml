@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                tools:ignore="UselessParent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/abdullah" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/solaiman_lipi"
+                    android:gravity="center"
+                    android:text="ড. খোন্দকার আব্দুল্লাহ জাহাঙ্গীর (রাহি.)"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/solaiman_lipi"
+                    android:gravity="center"
+                    android:text="ইসলামি স্কলার, লেখক, গবেষক ও শিক্ষাবিদ"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/books"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/solaiman_lipi"
+                        android:text="বই সমূহ"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/lectures"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/solaiman_lipi"
+                        android:text="লেকচার সমগ্র"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/solaiman_lipi"
+                    android:justificationMode="inter_word"
+                    android:text="ড. খোন্দকার আব্দুল্লাহ জাহাঙ্গীর (রাহি.) একজন প্রখ্যাত আলেম ও বহু গ্রন্থ প্রণেতা ছিলেন। তাঁর পূর্ণ নাম: আবু নসর মুহাম্মদ আব্দুল্লাহ জাহাঙ্গীর। তাঁর পিতার নাম খোন্দকার আনোয়ারুজ্জামান (রাহি.)। তিনি আব্দুল্লাহ জাহাঙ্গীর নামে দেশ জুড়ে পরিচিত।\n\nএই মহা মনীষী বৃহত্তর যশোর জেলার তৎকালীন ঝিনাইদহ মাহকুমার শৈলকুপা থানার দিগনগর গ্রামে ইংরেজি ১৯৫৮ সালের ৫ নভেম্বর, বাংলা ১৩৬৫ সালের ১৯ কার্তিক ও হিজরী ১৩৭৮ সালের ২৩ রবিউস সানি বুধবার বিকাল ৪ ঘটিকায় জন্ম গ্রহণ করেন। (সনদপত্রে প্রদত্ত জন্ম তারিখ: ১৯৬১ সালের ১ ফেব্রুয়ারি। তবে প্রকৃত জন্ম তারিখ হলো ১৯৫৮ সালের ৫ নভেম্বর)। ঝিনাইদহ সদরের নরহরিদ্রা হলো তাঁর নিজ গ্রাম। পরবর্তীতে তাঁর পিতা ঝিনাইদহ সদরের ধোপাঘাটা-গোবিন্দপুর গ্রামে স্থায়ীভাবে বসবাস শুরু করেন। তাঁর শৈশবের অধিকাংশ সময় কেটেছে মুরারিদহে ‘মিঞার দালান’ খ্যাত বাড়িতে।\n\nতিনি ১৯৬৮ সালে ঝিনাইদহ আলিয়া মাদরাসায় ভর্তি হন। সেখান থেকে ১৯৭৩ সালে দাখিল, ১৯৭৫ সালে আলিম এবং ১৯৭৭ সালে ফাযিল পাশ করেন। তারপর তিনি উচ্চশিক্ষার স্বপ্ন নিয়ে ‘মাদরাসা-ই-আলিয়া, ঢাকা’-তে (কামিল: হাদীস বিভাগ) ১৯৭৭-৭৯ শিক্ষাবর্ষে ভর্তি হন এবং উক্ত বিভাগ থেকে মাদ্রাসা বোর্ডে ৮ম স্থান অধিকার করে সুনামের সাথে কামিল পাশ করেন। ১৯৮১ সালে স্কলারশিপ অর্জন করে সৌদি আরবের রাজধানী রিয়াদে অবস্থিত ইমাম মুহাম্মদ বিন সউদ ইসলামি বিশ্ববিদ্যালয়ে পড়ার সুযোগ লাভ করেন। উক্ত বিশ্ববিদ্যালয়ে তাঁর লিসান্স শেষ হয় ১৯৮৬ সালে, মাস্টার্স সমাপ্ত হয় ১৯৯২ সালে। ১৯৯৮ সালে তিনি পিএইচডি ডিগ্রি লাভ করেন।\n\nসৌদি আরবের রাজধানী রিয়াদেই তিনি তাঁর বর্ণাঢ্য ছাত্রজীবনের ইতি টানেন। তারপর ১৯৯৮ সালের ৩ সেপ্টেম্বর কুষ্টিয়া ইসলামী বিশ্ববিদ্যালয়ে ‘আল-হাদীস এন্ড ইসলামিক স্টাডিজ’ বিভাগে লেকচারার হিসেবে যোগদান করেন। তিনি ১৯৯৯ সালে সহকারী অধ্যাপক, ২০০৪ সালে সহযোগী অধ্যাপক এবং ২০০৯ সালে অধ্যাপক পদে পদোন্নতি পেয়ে আমৃত্যু সেই বিভাগেই তিনি কর্মরত ছিলেন।\n\n১৯৯৮ খ্রিস্টাব্দে তিনি “আল-ফারুক একাডেমী” প্রতিষ্ঠা করেন। বিশুদ্ধ ইসলামী জ্ঞানের প্রচার ও মানবসেবার মহৎ উদ্দেশ্যে ২০১১ সালে “আব্দুল্লাহ জাহাঙ্গীর-আস সুন্নাহ ট্রাস্ট” প্রতিষ্ঠা করেন। উক্ত প্রতিষ্ঠানে বর্তমানে ইসলামী শিক্ষা প্রচার, দুস্থ নারী ও এতিম শিশুদের সেবা প্রদান সহ বিভিন্ন ইসলামী ও সামাজিক কর্মকাণ্ড পরিচালিত হচ্ছে।\n\n২০১৬ সালের ১১ মে তিনি সড়ক দূর্ঘটনায় ইন্তেকাল করেন। মৃত্যুকালে তাঁর বয়স হয়েছিল ৫৮ বছর। আল্লাহ তাঁকে জান্নাতের উচ্চ মর্যাদা দান করুন।"
+                    android:textSize="18sp"
+                    android:paddingBottom="15dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

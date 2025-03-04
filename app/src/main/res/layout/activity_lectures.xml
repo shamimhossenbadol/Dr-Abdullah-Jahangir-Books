@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".activities.LecturesActivity">
+
+    <RelativeLayout
+        android:id="@+id/normalScreen"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/normalScreenView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:enableAutomaticInitialization="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/normalBackward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginVertical="50dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:id="@+id/normalForward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginVertical="50dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/normalCurrentDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="7dp"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/normalTotalDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toStartOf="@id/fullscreenButton"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/fullscreenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_fullscreen_24"
+            android:layout_marginBottom="7dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/normalPlayIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_play_video"
+            android:visibility="gone"
+            app:tint="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/normalVideoProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-7dp"
+            android:progressTint="#FF0000"
+            android:secondaryProgressTint="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/normalScreen"
+        android:padding="5dp"
+        tools:listitem="@layout/video_items" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_below="@id/normalScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fullscreenView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/fullscreenBackward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginVertical="70dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo" />
+
+            <View
+                android:id="@+id/fullscreenForward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginVertical="70dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fullscreenCurrentDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="7dp"
+            android:text="00:00"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/fullscreenTotalDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toStartOf="@id/normalButton"
+            android:text="00:00"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/normalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_fullscreen_exit_24"
+            android:layout_marginBottom="7dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/fullscreenPlayIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_play_video"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:visibility="gone"
+            app:tint="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/fullscreenVideoProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-7dp"
+            android:progressTint="#FF0000"
+            android:secondaryProgressTint="#FFFFFF" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
